@@ -29,4 +29,7 @@ api.nvim_set_option('relativenumber', true)
 api.nvim_set_option('clipboard', 'unnamed')
 api.nvim_set_option('swapfile', false)
 
+vim.cmd[[colorscheme dracula]]
 
+require("autoclose").setup()
+require("plugins.tree").setup()

@@ -8,7 +8,10 @@ M.general = {
     -- Manejo de buffers
     ["<leader>n"] = { 'n', ':bn<CR>', { noremap = true, silent = false } },
     ["<leader>p"] = { 'n', ':bp<CR>', { noremap = true, silent = false } },
-    ["<leader>q"] = { 'n', ':q!<CR>', { noremap = true, silent = false } },
+    ["<C-n>"] = { 'n', ':tabnew<CR>', { noremap = true, silent = false } },
+    ["<C-f>"] = { 'n', ':Files<CR>', { noremap = true, silent = false } },
+    ["<leader>f"] = { 'n', ':Rg<CR>', { noremap = true, silent = false } },
+    ["<leader>t"] = { 'n', ':NvimTreeToggle<CR>', { noremap = true, silent = false } },
 }
 
 M.load_keybindings = function()

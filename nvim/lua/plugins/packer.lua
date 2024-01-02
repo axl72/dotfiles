@@ -14,4 +14,15 @@ return require('packer').startup(function(use)
             require'alpha'.setup(require'alpha.themes.dashboard'.config)
        end
     }
+    use { 'junegunn/fzf', run = ":call fzf#install()" }
+    use { 'junegunn/fzf.vim' }
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use 'Mofiqul/dracula.nvim'
+    use 'm4xshen/autoclose.nvim'
+    use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+        'nvim-tree/nvim-web-devicons', -- optional
+      },
+    }
 end)
